@@ -1,6 +1,6 @@
 :root {
   /* Custom color palette */
-  --background: rgb(217, 238, 135); /* #323B42 */
+  --background: rgb(236, 91, 43); /* #323B42 */
   --foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
 
   --card: hsla(24, 29%, 80%, 0.7); /* #D9C7BE */
@@ -18,11 +18,11 @@
   --muted: hsla(24, 6%, 48%, 1); /* #8C817B */
   --muted-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
 
-  --accent: rgb(246, 115, 38); /* #B5A79F */
+  --accent: rgb(252, 245, 116); /* #B5A79F */
   --accent-foreground: hsla(16, 5%, 39%, 1); /* #635B58 */
 
-  --destructive: hsla(10, 12%, 21%, 1); /* #3B3634 */
-  --destructive-foreground: hsla(50, 25%, 98%, 1); /* #FCFBF9 */
+  --destructive: rgb(208, 70, 46); /* #3B3634 */
+  --destructive-foreground: rgb(231, 231, 175); /* #FCFBF9 */
 
   --border: hsla(28, 13%, 61%, 1); /* #A59B95 */
   --input: hsla(28, 12%, 68%, 1); /* #B5A79F */
