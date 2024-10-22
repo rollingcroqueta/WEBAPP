@@ -38,7 +38,7 @@ main {
   grid-template-columns: 1fr; /* One column taking full width */
   grid-template-rows: 1fr; /* One rows, each taking full height */
   height: calc(
-    100vh - var(--header-height) - var(--footer-height)
+    100% - var(--header-height)
   ); /* The viewport minus the header and footer heights */
   width: 100%; /* Full width */
   gap: 1rem; /* Optional, adds space between rows/columns */
@@ -144,7 +144,7 @@ p {
 }
 
 .image-container img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -186,12 +186,27 @@ p {
 }
 
 .enlacespract1 {
-  color: rgb(117, 6, 2);
+  color:  hsl(29, 96%, 57%);
   font-weight: bold;
   font-family: 'Verdana'
 }
 
 .textospract1 {
-  color: rgb(179, 50, 7);
+  color: rgb(66, 59, 93);
   font-family: 'Verdana'
+}
+
+.h1pract {
+  font-family: 'Verdana';
+  font-weight: bold;
+  margin-left: 80px;
+  color:  rgb(255, 255, 255);
+}
+
+.h2pract {
+  font-family: 'Verdana';
+  color:  rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 35px;
 }
