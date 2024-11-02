@@ -4,7 +4,7 @@ Welcome to my college repository! Here I will put my programming exercises from 
 
 ## Demo
 
-You can view the live site at: [https://rollingcroqueta.github.io/WEBAPP/practica1](https://rollingcroqueta-udit.github.io/WEBAPP/practica1)
+You can view the live site at: [https://rollingcroqueta.github.io/WEBAPP/practica1](https://rollingcroqueta.github.io/WEBAPP/practica1)
 
 ## License
 
