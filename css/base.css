@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: 'Verdana', sans-serif;
+  font-family: "Verdana", sans-serif;
   min-height: 50vh;
   background-color: var(--background);
   color: var(--secondary-foreground);
@@ -186,29 +186,31 @@ p {
 }
 
 .enlacespract1 {
-  color:  hsl(29, 96%, 57%);
+  color: hsl(29, 96%, 57%);
   font-weight: bold;
-  font-family: 'Verdana'
+  font-family: "Verdana";
 }
 
 .textospract1 {
   color: rgb(66, 59, 93);
-  font-family: 'Verdana'
+  font-family: "Verdana";
 }
 
 .h1pract {
-  font-family: 'Verdana';
+  font-family: "Verdana";
   font-weight: bold;
   margin-left: 80px;
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .h2pract {
-  font-family: 'Verdana';
-  color:  rgb(255, 255, 255);
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 35px;
 }
 
-.fontpractice {font-family: 'DazzedTRIAL-Bold';}
+.fontpractice {
+  font-family: "DazzedTRIAL-Bold";
+}

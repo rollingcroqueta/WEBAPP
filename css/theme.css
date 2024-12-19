@@ -1,6 +1,6 @@
 :root {
   /* Custom color palette */
-  --background:  rgb(66, 59, 93); /* #323B42 */
+  --background: rgb(66, 59, 93); /* #323B42 */
   --foreground: rgb(255, 255, 255); /* #FCFBF9 */
 
   --card: hsla(24, 29%, 80%, 0.7); /* #D9C7BE */
