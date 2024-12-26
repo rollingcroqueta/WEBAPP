@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="./css/portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://ik.imagekit.io/tuUsuario/tuLogo.png"
+        alt="Logo"
+        class="logo"
+      />
+    </header>
+
+    <main>
+      <section id="about-me">
+        <div class="about-text">
+          <h2>Sobre mí</h2>
+          <p>Aquí va tu texto de presentación...</p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://ik.imagekit.io/tuUsuario/tuGif.gif"
+            alt="Gif sobre mí"
+          />
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project-container">
+          <!-- Repite este bloque 6 veces para tus proyectos -->
+          <div class="project">
+            <img
+              src="https://ik.imagekit.io/tuUsuario/proyecto1.jpg"
+              alt="Proyecto 1"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3>Nombre del Proyecto</h3>
+              <button class="toggle-info">▼</button>
+              <div class="project-details">
+                <p>Descripción del proyecto...</p>
+                <img
+                  src="https://ik.imagekit.io/tuUsuario/proyecto1-extra.jpg"
+                  alt="Imagen extra del Proyecto 1"
+                  class="extra-image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Fin del bloque de proyecto -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact-info">
+        <p>Contacto: p.gutierrezoliet@gmail.com</p>
+        <p>Instagram: @rollingcroqueta</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Cubano";
+  src: url("ruta-a-tu-fuente-cubano.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Dazzed Medium";
+  src: url("ruta-a-tu-fuente-dazzed-medium.woff2") format("woff2");
+}
+
+:root {
+  --color-azul: #2272ff;
+  --color-naranja: #f9b872;
+}
+
+body {
+  font-family: "Dazzed Medium", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cubano", sans-serif;
+}
+
+header {
+  background-color: var(--color-azul);
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: white;
+}
+
+.about-text,
+.about-image {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#projects {
+  padding: 2rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.toggle-info {
+  background: var(--color-naranja);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.project-details {
+  display: none;
+}
+
+.extra-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--color-azul);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
