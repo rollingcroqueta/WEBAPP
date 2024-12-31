@@ -14,7 +14,8 @@
 - Bien escrito y personal
 
 ## Estilado
-- Error en cargade variables css
+- El validador da un Parse Error que no conseguimos detectar con el browser y la carga de variables funciona bien
 - Estilado trabajado y bien definido
 ### NOTAS
 - +1 por presentar el trabajo en clase
+- enhorabuena!
