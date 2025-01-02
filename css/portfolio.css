@@ -11,16 +11,16 @@
 }
 
 :root {
-  --color-azul: #2272ff;
-  --color-naranja: #f9b872;
+  color: rgb(18, 40, 63);
+  color: rgb(239, 96, 56);
 }
 
 body {
   font-family: "DazzedTRIAL-Bold", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff;
-  color: #333;
+  background-color: rgb(239, 96, 56);
+  color: rgb(233, 255, 116);
 }
 
 h1,
@@ -30,7 +30,7 @@ h3 {
 }
 
 header {
-  background-color: var(--color-azul);
+  background-color: rgb(239, 96, 56);
   padding: 1rem;
   text-align: center;
 }
@@ -86,7 +86,7 @@ header {
 .toggle-info {
   background: var(--color-naranja);
   border: none;
-  color: white;
+  color: rgb(18, 40, 63);
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
@@ -102,8 +102,8 @@ header {
 }
 
 footer {
-  background-color: var(--color-azul);
-  color: white;
+  background-color: rgb(18, 40, 63);
+  color: rgb(233, 255, 116);
   text-align: center;
   padding: 1rem;
 }
