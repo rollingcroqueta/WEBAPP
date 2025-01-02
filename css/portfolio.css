@@ -4,8 +4,10 @@
 }
 
 @font-face {
-  font-family: "Dazzed Medium";
-  src: url("ruta-a-tu-fuente-dazzed-medium.woff2") format("woff2");
+  font-family: "DAZZEDTrial-Bold";
+  src: url("../assets/fonts/DazzedTRIAL-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -14,7 +16,7 @@
 }
 
 body {
-  font-family: "Dazzed Medium", sans-serif;
+  font-family: "DazzedTRIAL-Bold", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f8ff;
