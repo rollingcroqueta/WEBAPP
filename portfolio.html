@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="./css/portfolio.css" />
-
     <link
       rel="icon"
       type="image/png"
@@ -15,8 +14,8 @@
   <body>
     <header>
       <img
-        src="https://ik.imagekit.io/tuUsuario/tuLogo.png"
-        alt="Logo"
+        src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/Logo.png?updatedAt=1735918103865"
+        alt="Logo con un dibujo d eun pollo sentado y un texto que cita 'Rolling Croqueta'"
         class="logo"
       />
     </header>
@@ -25,8 +24,19 @@
       <section id="about-me">
         <div class="about-text">
           <h2>¿Quién es RollingCroqueta?</h2>
-          <p>Aquí va tu texto de presentación...</p>
+          <p>
+            Rolling Croqueta soy yo, y yo soy Rolling Croqueta: al igual que
+            muchos ilustradores, desde joven quise tener un alter ego como
+            artista. Y, también, como en la mayoría de los casos, surgió de
+            forma esporádica y anecdótica. Siempre he sido partidaria de hacer
+            tu pasión tu trabajo: desde que de pequeña me introduje en el mundo
+            del cómic, tengo claro que me quiero dedicar al arte. Por el
+            momento, me dedico a vender en ferias de ilustración mis propias
+            creaciones, mientras que a la vez termino mi formación universitaria
+            en diseño audiovisual y gráfico.
+          </p>
         </div>
+
         <div class="about-image">
           <img
             src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/Aboutme.png?updatedAt=1735900272195"
@@ -38,21 +48,35 @@
       <section id="projects">
         <h2>Proyectos</h2>
         <div class="project-container">
-          <!-- Repite este bloque 6 veces para tus proyectos -->
           <div class="project">
-            <img
-              src="https://ik.imagekit.io/tuUsuario/proyecto1.jpg"
-              alt="Proyecto 1"
-              class="project-image"
-            />
+            <div class="carousel">
+              <img
+                src="https://ik.imagekit.io/tuUsuario/proyecto1-1.jpg"
+                alt="Proyecto 1 - Imagen 1"
+                class="carousel-image active"
+                data-project="proyecto1"
+              />
+              <img
+                src="https://ik.imagekit.io/tuUsuario/proyecto1-2.jpg"
+                alt="Proyecto 1 - Imagen 2"
+                class="carousel-image"
+                data-project="proyecto1"
+              />
+              <img
+                src="https://ik.imagekit.io/tuUsuario/proyecto1-3.jpg"
+                alt="Proyecto 1 - Imagen 3"
+                class="carousel-image"
+                data-project="proyecto1"
+              />
+              <button class="carousel-button prev">&#10094;</button>
+              <button class="carousel-button next">&#10095;</button>
+            </div>
             <div class="project-info">
-              <h3>Nombre del Proyecto</h3>
-              <button class="toggle-info">▼</button>
-              <div class="project-details">
-                <p>
-                  Probando
-                  texfjiodjgiodhigdiudhiuhdgodhjijoidfhgjiohfdgsjhiodfgjioioug
-                </p>
+              <h3 class="project-title" data-project="proyecto1">
+                Nombre del Proyecto 1
+              </h3>
+              <div class="project-details" id="proyecto1">
+                <p>Descripción detallada del Proyecto 1...</p>
                 <img
                   src="https://ik.imagekit.io/tuUsuario/proyecto1-extra.jpg"
                   alt="Imagen extra del Proyecto 1"
@@ -61,7 +85,7 @@
               </div>
             </div>
           </div>
-          <!-- Fin del bloque de proyecto -->
+          <!-- Repite este bloque para más proyectos -->
         </div>
       </section>
     </main>
