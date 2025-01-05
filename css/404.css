@@ -1,8 +1,22 @@
+@font-face {
+  font-family: "DazzedTRIALBold";
+  src: url("../assets/fonts/DazzedTRIAL-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DazzedTRIALMedium";
+  src: url("../assets/fonts/DazzedTRIAL-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: "DAZZEDTrialMedium";
+  background-color: #8d2222;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,21 +27,22 @@ body {
   text-align: center;
   max-width: 400px; /* Reducimos el ancho máximo del contenedor */
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .title {
+  font-family: "DAZZEDTrialBold";
   font-size: 2.5rem; /* Ajuste del tamaño del título */
-  color: #333;
+  color: #150d0d;
   margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #555;
+  color: #5b0c0c;
   margin-bottom: 15px;
 }
 
@@ -41,12 +56,12 @@ body {
 
 .message {
   font-size: 0.9rem;
-  color: #666;
+  color: #5b0c0c;
   margin-bottom: 15px;
 }
 
 .redirect-image {
-  width: 60px; /* Hacemos la imagen más pequeña */
+  width: 100px; /* Hacemos la imagen más pequeña */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
