@@ -4,7 +4,7 @@ Welcome to my college repository! Here I will put my programming exercises from 
 
 ## Demo
 
-You can view the live site at: [https://rollingcroqueta.github.io/WEBAPP/someoutstandingwebs](https://rollingcroqueta.github.io/WEBAPP/someoutstandingwebs)
+You can view the live site at: [https://rollingcroqueta.github.io/WEBAPP/portfolio](https://rollingcroqueta.github.io/WEBAPP/portfolio)
 
 ## License
 
@@ -17,3 +17,4 @@ To get a local copy of this project, follow these steps:
 1. Clone the repo:
    ```bash
    git clone https://github.com/rollingcroqueta/WEBAPP.git
+   ```
