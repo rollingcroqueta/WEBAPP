@@ -1,63 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const carousels = document.querySelectorAll(".carousel");
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselButtons = document.querySelectorAll(".carousel-button");
   const projectTitles = document.querySelectorAll(".project-title");
-  let activeProject = null;
+  const projectDetails = document.querySelectorAll(".project-details");
 
-  carousels.forEach((carousel) => {
-    const images = carousel.querySelectorAll(".carousel-image");
-    const prevBtn = carousel.querySelector(".prev");
-    const nextBtn = carousel.querySelector(".next");
-    let currentIndex = 0;
+  let currentIndex = 0;
 
-    function showImage(index) {
-      images[currentIndex].classList.remove("active");
-      images[index].classList.add("active");
-      currentIndex = index;
-    }
+  function updateCarousel(index) {
+    const carouselImages = document.querySelectorAll(".carousel-image");
 
-    function nextImage() {
-      const nextIndex = (currentIndex + 1) % images.length;
-      showImage(nextIndex);
-    }
+    // Ocultar todas las imágenes del carrusel
+    carouselImages.forEach((img) => {
+      img.classList.remove("active");
+    });
 
-    function prevImage() {
-      const prevIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(prevIndex);
-    }
+    // Mostrar la imagen activa
+    carouselImages[index].classList.add("active");
 
-    nextBtn.addEventListener("click", nextImage);
-    prevBtn.addEventListener("click", prevImage);
-  });
+    // Actualizar el texto y las imágenes adicionales
+    projectTitles.forEach((title) => {
+      title.style.display = "none"; // Ocultar todos los títulos
+    });
 
-  function toggleProjectDetails(projectId) {
-    const projectDetails = document.getElementById(projectId);
+    projectDetails.forEach((details) => {
+      details.classList.remove("active"); // Ocultar todos los detalles
+    });
 
-    if (activeProject === projectId) {
-      projectDetails.classList.remove("active");
-      setTimeout(() => {
-        projectDetails.style.display = "none";
-      }, 500);
-      activeProject = null;
-    } else {
-      if (activeProject) {
-        const previousProjectDetails = document.getElementById(activeProject);
-        previousProjectDetails.classList.remove("active");
-        setTimeout(() => {
-          previousProjectDetails.style.display = "none";
-        }, 500);
-      }
-      projectDetails.style.display = "block";
-      setTimeout(() => {
-        projectDetails.classList.add("active");
-      }, 10);
-      activeProject = projectId;
-    }
+    projectTitles[index].style.display = "block"; // Mostrar el título activo
+    projectDetails[index].classList.add("active"); // Mostrar los detalles activos
   }
 
-  projectTitles.forEach((title) => {
-    title.addEventListener("click", () => {
-      const projectId = title.getAttribute("data-project");
-      toggleProjectDetails(projectId);
+  carouselButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      if (button.classList.contains("next")) {
+        currentIndex =
+          (currentIndex + 1) %
+          document.querySelectorAll(".carousel-image").length;
+      } else {
+        currentIndex =
+          (currentIndex -
+            1 +
+            document.querySelectorAll(".carousel-image").length) %
+          document.querySelectorAll(".carousel-image").length;
+      }
+      updateCarousel(currentIndex);
     });
   });
+
+  // Inicializar el carrusel mostrando la primera imagen y detalles
+  updateCarousel(currentIndex);
 });

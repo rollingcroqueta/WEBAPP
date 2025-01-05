@@ -15,15 +15,21 @@
     <header>
       <img
         src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/Logo.png?updatedAt=1735918103865"
-        alt="Logo con un dibujo d eun pollo sentado y un texto que cita 'Rolling Croqueta'"
+        alt="Logo con un dibujo de un pollo sentado y un texto que cita 'Rolling Croqueta'"
         class="logo"
       />
     </header>
 
     <main>
       <section id="about-me">
+        <h2 class="section-title about-title">¿Quién es RollingCroqueta?</h2>
+        <div class="about-image">
+          <img
+            src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/aboutme.png?updatedAt=1735945244044"
+            alt="Imagen sobre mí"
+          />
+        </div>
         <div class="about-text">
-          <h2>¿Quién es RollingCroqueta?</h2>
           <p>
             Rolling Croqueta soy yo, y yo soy Rolling Croqueta: al igual que
             muchos ilustradores, desde joven quise tener un alter ego como
@@ -41,28 +47,21 @@
             universitaria en diseño audiovisual y gráfico.
           </p>
         </div>
-
-        <div class="about-image">
-          <img
-            src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/aboutme.png?updatedAt=1735945244044"
-            alt="Imagen sobre mí"
-          />
-        </div>
       </section>
 
       <section id="projects">
-        <h2>Proyectos</h2>
+        <h2 class="section-title projects-title">Proyectos</h2>
         <div class="project-container">
           <div class="project">
             <div class="carousel">
               <img
-                src="https://ik.imagekit.io/tuUsuario/proyecto1-1.jpg"
+                src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/Portadavigdis.png?updatedAt=1736097873782"
                 alt="Proyecto 1 - Imagen 1"
                 class="carousel-image active"
                 data-project="proyecto1"
               />
               <img
-                src="https://ik.imagekit.io/tuUsuario/proyecto1-2.jpg"
+                src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/portadaursidae.png?updatedAt=1736098724490"
                 alt="Proyecto 1 - Imagen 2"
                 class="carousel-image"
                 data-project="proyecto1"
@@ -77,31 +76,73 @@
               <button class="carousel-button next">&#10095;</button>
             </div>
             <div class="project-info">
+              <!-- Títulos y detalles para el Proyecto 1 -->
               <h3 class="project-title" data-project="proyecto1">
-                Nombre del Proyecto 1
+                Vigdis y el príncipe de los dragones
               </h3>
-              <div class="project-details" id="proyecto1">
+              <div class="project-details active" id="proyecto1">
                 <p>Descripción detallada del Proyecto 1...</p>
-                <img
-                  src="https://ik.imagekit.io/tuUsuario/proyecto1-extra.jpg"
-                  alt="Imagen extra del Proyecto 1"
-                  class="extra-image"
-                />
+                <div class="extra-image-container">
+                  <img
+                    src="https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/Portadavigdis.png?updatedAt=1735910535824"
+                    alt="Lineup de los personajes principales del cómic: un dragón pequeño verde, una chica morena con abrigo azul y un hacha, y un hombre fortachón, tuerto, sujetando la cabeza de un dragón"
+                    class="extra-image"
+                  />
+                </div>
+              </div>
+
+              <!-- Títulos y detalles para el Proyecto 2 -->
+              <h3 class="project-title" data-project="proyecto2">
+                Título del Proyecto 2
+              </h3>
+              <div class="project-details" id="proyecto2">
+                <p>Descripción detallada del Proyecto 2...</p>
+                <div class="extra-image-container">
+                  <img
+                    src="ruta_de_la_imagen_adicional_proyecto2.jpg"
+                    alt="Descripción de la imagen adicional del Proyecto 2"
+                    class="extra-image"
+                  />
+                </div>
+              </div>
+
+              <!-- Títulos y detalles para el Proyecto 3 -->
+              <h3 class="project-title" data-project="proyecto3">
+                Título del Proyecto 3
+              </h3>
+              <div class="project-details" id="proyecto3">
+                <p>Descripción detallada del Proyecto 3...</p>
+                <div class="extra-image-container">
+                  <img
+                    src="ruta_de_la_imagen_adicional_proyecto3.jpg"
+                    alt="Descripción de la imagen adicional del Proyecto 3"
+                    class="extra-image"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <!-- Repite este bloque para más proyectos -->
         </div>
       </section>
     </main>
 
     <footer>
       <div class="contact-info">
-        <p>Contacto: p.gutierrezoliet@gmail.com</p>
-        <p>Instagram: @rollingcroqueta</p>
+        <p>
+          Contacto:
+          <a href="mailto:p.gutierrezoliet@gmail.com"
+            >p.gutierrezoliet@gmail.com</a
+          >
+        </p>
+        <p>
+          Instagram:
+          <a href="https://www.instagram.com/rollingcroqueta" target="_blank"
+            >@rollingcroqueta</a
+          >
+        </p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
