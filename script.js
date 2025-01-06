@@ -46,6 +46,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Añadir funcionalidad de despliegue/colapso con animación para los títulos
+  projectTitles.forEach((title, index) => {
+    title.addEventListener("click", function () {
+      const details = projectDetails[index];
+      if (details.classList.contains("active")) {
+        // Cerrar los detalles si están abiertos
+        details.style.maxHeight = "0";
+        details.style.opacity = "0";
+        setTimeout(() => details.classList.remove("active"), 500); // Esperar a que termine la animación
+      } else {
+        // Abrir los detalles
+        details.classList.add("active");
+        details.style.maxHeight = details.scrollHeight + "px";
+        details.style.opacity = "1";
+      }
+    });
+  });
+
   // Inicializar el carrusel mostrando la primera imagen y detalles
   updateCarousel(currentIndex);
 });
