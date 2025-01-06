@@ -1,0 +1,21 @@
+{
+  "name": "Rolling Croqueta's Portfolio",
+  "short_name": "Rolling Croqueta",
+  "description": "Portfolio web con algunos de mis proyectos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E9FF9C",
+  "theme_color": "#EF6038",
+  "icons": [
+    {
+      "src": "https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/faviconportfolio.png?updatedAt=1735944318254",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://ik.imagekit.io/rollingcroqueta/pract1/Portfolio/faviconportfolio.png?updatedAt=1735944318254",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
