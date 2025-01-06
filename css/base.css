@@ -1,0 +1,40 @@
+/* base.css */
+:root {
+  --color-dark: rgb(18, 40, 63);
+  --color-orange: rgb(239, 96, 56);
+  --color-yellow: rgb(233, 255, 116);
+}
+
+body {
+  font-family: "DazzedTRIALMedium", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark);
+  color: var(--color-yellow);
+  font-size: 1.1rem;
+}
+
+header {
+  background-color: var(--color-orange);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--color-orange);
+  color: var(--color-yellow);
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+footer a {
+  color: var(--color-yellow);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
