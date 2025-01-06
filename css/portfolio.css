@@ -182,6 +182,7 @@ header {
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 0.7rem;
+  text-align: center;
 }
 
 .project-title:hover {
