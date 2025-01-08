@@ -1,4 +1,3 @@
-/* theme.css */
 .logo {
   max-width: 220px;
 }
@@ -107,14 +106,14 @@
 
 .extra-image-container {
   margin-top: 1rem;
-  padding-top: 75%; /* 4:3 Aspect Ratio */
+  padding-top: 75%;
 }
 
 .carousel,
 .extra-image-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
   overflow: hidden;
 }
 

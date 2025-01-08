@@ -25,7 +25,7 @@ body {
 
 .container {
   text-align: center;
-  max-width: 400px; /* Reducimos el ancho máximo del contenedor */
+  max-width: 400px;
   padding: 20px;
   background: #ffffff;
   border-radius: 8px;
@@ -34,7 +34,7 @@ body {
 
 .title {
   font-family: "DAZZEDTrialBold";
-  font-size: 2.5rem; /* Ajuste del tamaño del título */
+  font-size: 2.5rem;
   color: #150d0d;
   margin-bottom: 10px;
 }
@@ -48,7 +48,7 @@ body {
 
 .gif {
   width: 100%;
-  max-width: 300px; /* Reducimos el tamaño del GIF */
+  max-width: 300px;
   height: auto;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -61,7 +61,7 @@ body {
 }
 
 .redirect-image {
-  width: 100px; /* Hacemos la imagen más pequeña */
+  width: 100px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
